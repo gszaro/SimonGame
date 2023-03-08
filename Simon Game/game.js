@@ -69,7 +69,7 @@ function animatePress(currentColor) {
     $('#' + currentColor).removeClass('pressed');
   }, 100);
 }
-
+//start over level function
 function startOver() {
   level = 0;
   gamePattern = [];
