@@ -42,7 +42,7 @@ function checkAnswer(currentLevel) {
     startOver();
   }
 }
-
+//level incrementer and button flash
 function nextSequence() {
   userClickedPattern = [];
   level++;
