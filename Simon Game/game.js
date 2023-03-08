@@ -4,6 +4,7 @@ let userClickedPattern = [];
 let started = false;
 let level = 0;
 
+//key down function
 $(document).keydown(function () {
   if (!started) {
     $('#level-title').text('Level ' + level);
