@@ -12,7 +12,7 @@ $(document).keydown(function () {
     started = true;
   }
 });
-
+//button click function
 $('.btn').click(function () {
   userChosenColor = $(this).attr('id');
   userClickedPattern.push(userChosenColor);
@@ -20,7 +20,7 @@ $('.btn').click(function () {
   animatePress(userChosenColor);
   checkAnswer(userClickedPattern.length - 1);
 });
-
+//checks answer with game pattern
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     console.log('success');
@@ -71,8 +71,7 @@ function animatePress(currentColor) {
 }
 
 function startOver() {
-    level = 0;
-    gamePattern = [];
-    started = false;
-  }
-  
+  level = 0;
+  gamePattern = [];
+  started = false;
+}
