@@ -57,7 +57,7 @@ function nextSequence() {
     .fadeOut(100)
     .fadeIn(100);
 }
-
+//play sound function
 function playSound(name) {
   let audio = new Audio('sounds/' + name + '.mp3');
   audio.play();
