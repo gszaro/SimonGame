@@ -42,7 +42,7 @@ function checkAnswer(currentLevel) {
     startOver();
   }
 }
-//level incrementer and button flash
+//level incrementer and button generator
 function nextSequence() {
   userClickedPattern = [];
   level++;
@@ -62,7 +62,7 @@ function playSound(name) {
   let audio = new Audio('sounds/' + name + '.mp3');
   audio.play();
 }
-
+//animation of button
 function animatePress(currentColor) {
   $('#' + currentColor).addClass('pressed');
   setTimeout(function () {
